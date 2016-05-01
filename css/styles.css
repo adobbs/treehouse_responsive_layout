@@ -1,0 +1,297 @@
+/* Global Layout Set-up */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #4b4b4b;
+  background: #f9f9f9;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+a:hover {
+  color: #8d6ecc;
+}
+
+/* Global Nav Styles */
+
+.main-nav {
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 5%;
+}
+
+.main-nav .name {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #8d6ecc;
+}
+
+.main-nav-list {
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 700;
+  list-style-type: none;
+}
+
+.main-nav-list a {
+  background-color: #fff;
+  width: 100%;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.main-nav-list a:hover {
+  background-color: #ededed;
+  color: #8d6ecc;
+}
+
+/* Section, Component, and Element Styles */
+
+header {
+  margin: 0 auto;
+  padding: 30px 5%;
+}
+
+.profile-image {
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.intro-text,
+.outro-text {
+  line-height: 22px;
+  color: #777;
+}
+
+main {
+  margin: 0 auto 30px auto;
+  padding: 30px 5%;
+  background-color: #fff;
+}
+
+h2 {
+  /*margin-bottom: 30px;*/
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #8d6ecc;
+}
+
+.project {
+  margin: 40px auto;
+}
+
+.project img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project h3 {
+  font-weight: 400;
+}
+
+.project p {
+  max-width: 280px;
+  margin: 0 auto;
+  line-height: 22px;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 30px 5% 0 5%;
+}
+
+.contact-methods {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  color: #777;
+}
+
+.contact-methods a {
+  font-weight: 500;
+  color: #777;
+}
+
+hr {
+  margin: 40px 0 0 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-nav {
+  width: 100%;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 700;
+  list-style-type: none;
+}
+
+.footer-nav-list .name {
+  font-size: 14px;
+}
+
+.back-to-top {
+  text-transform: uppercase;
+}
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* Styles for larger screens */
+
+@media screen and (min-width: 768px) {
+
+  .main-nav {
+    width: 70%;
+  }
+
+  .main-nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav-list a {
+    background: #f9f9f9;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #777;
+  }
+
+  .profile-image {
+    float: right;
+    max-width: 40%;
+    max-height: 40%;
+    margin-left: 10px;
+  }
+
+  .intro-text {
+    margin: 0;
+    text-align: left;
+  }
+
+  .intro-text,
+  .outro-text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .outro-text {
+    max-width: 570px;
+    margin: 30px auto;
+  }
+
+  .project {
+    float: left;
+    width: 50%;
+  }
+
+  .project:nth-child(even) {
+    padding-right: 10px;
+  }
+
+  .project:nth-child(odd) {
+    padding-left: 10px;
+  }
+
+  .contact-methods {
+    font-size: 22px;
+    line-height: 44px;
+  }
+
+  hr {
+    margin: 80px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .main-nav .name {
+    margin: 0 auto 0 0;
+  }
+
+  .main-nav-list {
+    width: 40%;
+    margin: 0;
+    align-self: flex-end;
+  }
+
+  .main-nav-list a {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav-list a:hover {
+    background-color: #f9f9f9;
+    color: #8d6ecc;
+  }
+
+  .project {
+    width: calc(100% / 3);
+  }
+
+  .project:nth-child(even) {
+    padding-right: 0;
+  }
+
+  .project:nth-child(odd) {
+    padding-left: 0;
+  }
+
+  .project:nth-child(3n+2) {
+    padding-right: 10px;
+  }
+
+  .project:nth-child(3n+3) {
+    padding: 0 5px;
+  }
+
+  .project:nth-child(3n+4) {
+    padding-left: 10px;
+  }
+}
