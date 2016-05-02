@@ -25,7 +25,7 @@ a:hover {
   color: #8d6ecc;
 }
 
-/* Global Nav Styles */
+/* Main Nav Styles */
 
 .main-nav {
   width: 100%;
@@ -36,7 +36,7 @@ a:hover {
 .main-nav .name {
   margin-bottom: 20px;
   font-size: 28px;
-  color: #8d6ecc;
+  color: #e4b42a;
 }
 
 .main-nav-list {
@@ -106,11 +106,13 @@ h2 {
     max-height: 100%;
 }
 
-.project h3 {
+.project h3,
+.skill h3 {
   font-weight: 400;
 }
 
-.project p {
+.project p,
+.skill p {
   max-width: 280px;
   margin: 0 auto;
   line-height: 22px;
@@ -163,6 +165,10 @@ hr {
   text-transform: uppercase;
 }
 
+.footer-nav-link {
+  display: none;
+}
+
 /* Clearfix */
 
 .cf:before,
@@ -189,12 +195,12 @@ hr {
   }
 
   .main-nav-list a {
-    background: #f9f9f9;
-    margin: 5px auto;
-    padding: 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    color: #777;
+    background-color: #f9f9f9;
+  }
+
+  .main-nav-list a:hover {
+    background-color: #f9f9f9;
+    color: #8d6ecc;
   }
 
   .profile-image {
@@ -220,7 +226,8 @@ hr {
     margin: 30px auto;
   }
 
-  .project {
+  .project,
+  .skill {
     float: left;
     width: 50%;
   }
@@ -240,6 +247,21 @@ hr {
 
   hr {
     margin: 80px 0 0 0;
+  }
+
+  .footer-nav .name {
+    margin-right: auto;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .footer-nav-link {
+    display: flex;
+    align-self: flex-end;
+    margin-left: 20px;
+    text-transform: uppercase;
   }
 }
 
